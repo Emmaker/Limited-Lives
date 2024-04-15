@@ -1,0 +1,8 @@
+{
+    "name" : "ll_life1",
+
+    "scripts" : [ ],
+
+    "label" : "^red;1^reset; Life Left",
+    "icon" : "/interface/statuses/ll_life1.png"
+}

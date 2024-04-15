@@ -1,0 +1,3 @@
+[
+    { "op" : "add", "path" : "/genericScriptContexts/limitedLives", "value" : "/scripts/player/limitedLives.lua" }
+]
