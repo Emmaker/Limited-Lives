@@ -45,8 +45,8 @@ function uninit()
     end
 
     player.setProperty("ll_defaultmode", self.defaultMode)
-
     player.setProperty("ll_lives", self.lives)
+    player.setProperty("ll_timer", self.timer)
 
     status.clearPersistentEffects("Limited Lives")
 end
@@ -62,4 +62,7 @@ end
 function loseLife()
     self.lives = self.lives - 1
     sb.logInfo(player.uniqueId() .. " lost a life. Lives left: " .. self.lives)
+
+    -- Don't need to update persistent effects as losing a life means dying,
+    -- thus init will be called later.
 end
